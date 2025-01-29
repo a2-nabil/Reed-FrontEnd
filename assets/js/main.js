@@ -1,6 +1,9 @@
-// $(document).ready(function() {
-//     $('.orderby').select2();
-// });
-$("select").select2({
-  theme: "tailwindcss-3",
-});
+(function ($) {
+  "use strict";
+
+  $(".orderby").select2({
+    theme: "tailwindcss-3",
+  });
+//   $("#menu").slidingMenu(settings);
+
+})(jQuery);
