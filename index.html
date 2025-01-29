@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Courses</title>
+  <!-- google fonts link here  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <!-- tailwind css link here  -->
+  <link rel="stylesheet" href="./assets/css/tailwind.css" />
+  <!-- font awesome link here -->
+  <link rel="stylesheet" href="./assets/css/all.min.css" />
+  <!-- select2 css link here  -->
+  <link rel="stylesheet" href="./assets/css/select2.min.css" />
+  <!-- Custom Css Link Here  -->
+  <link rel="stylesheet" href="./assets/css/common.css" />
+
+</head>
+
+<body>
+  <!-- page header area start  -->
+  <div class="a2n_pageHeader__area bg-secondary p-4 xl:py-11">
+    <div class="container mx-auto text-center">
+      <div class="pageHeader_content">
+        <h2 class="xl:text-3xl text-xl font-medium text-main-fontColor font-primary text-center mb-1">
+          Design
+        </h2>
+        <ol class="list-reset flex text-grey justify-center">
+          <li>
+            <a href="#" class="no-underline text-[#696969] font-primary font-normal text-base">Home</a>
+          </li>
+          <li class="px-1 text-[#696969]">/</li>
+          <li>
+            <a href="#" class="no-underline text-[#696969] font-primary font-normal text-base">Jobs</a>
+          </li>
+          <li class="px-1 text-[#696969]">/</li>
+          <li>
+            <a href="#" class="no-underline text-main-fontColor font-primary font-normal text-base">Design</a>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <!-- page header area end  -->
+
+  <div class="a2n_mainContent__area bg-white px-4 xl:py-12">
+    <div class="xl:max-w-[1290px] mx-auto flex gap-8 w-full">
+      <div class="a2n_left_sidebar w-1/3">
+        <h3 class="font-primary">Search by Keywords</h3>
+        <form method="GET" action="">
+          <div class="bg-white border-2 shadow p-2 relative rounded-xl flex">
+            <span class="w-auto flex justify-end items-center text-gray-500 p-2">
+              <i class="fas fa-search"></i>
+            </span>
+            <input name="episodequery" id="title" class="border-white outline-none border-0 w-full rounded-xl p-2"
+              type="text" placeholder="Try 'How to find product market fit?'" />
+          </div>
+        </form>
+      </div>
+      <div class="a2n_right__wrapper w-2/3">
+        <div class="a2n_courses_wrapper">
+          <div class="results-filter-wrapper">
+            <h3 class="title">Your Selected</h3>
+            <div class="inner">
+              <ul class="results-filter">
+                <li>
+                  <a href="#"><span class="close-value">x</span>Newest</a>
+                </li>
+              </ul>
+              <a href="#">Clear all</a>
+            </div>
+          </div>
+          <div class="jobs-alert-ordering-wrapper">
+            <div class="results-count">Showing all 7 results</div>
+            <div class="jobs-ordering-wrapper">
+              <form class="jobs-ordering" method="get" action="/">
+                <select name="filter-orderby" class="orderby select2-hidden-accessible" data-placeholder="Sort by"
+                  tabindex="-1" aria-hidden="true">
+                  <option value="menu_order" selected="selected">Sort by (Default)</option>
+                  <option value="newest">Newest</option>
+                  <option value="oldest">Oldest</option>
+                  <option value="random">Random</option>
+                </select>
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Js links Here  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./assets/js/select2.min.js"></script>
+  <script src="./assets/js/all.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
