@@ -2,8 +2,9 @@
   "use strict";
 
   $(".orderby").select2({
-    theme: "tailwindcss-3",
+    width: "auto",
   });
+  
 //   $("#menu").slidingMenu(settings);
 
 })(jQuery);

@@ -51,10 +51,9 @@
             </li>
             <li class="px-1 text-[#696969]">/</li>
             <li>
-              <a
-                href="#"
+              <span
                 class="no-underline text-main-fontColor font-primary font-normal text-base"
-                >Design</a
+                >Design</span
               >
             </li>
           </ol>
@@ -83,10 +82,10 @@
               Search by Keywords
             </h3>
             <form method="GET" action="">
-              <div class="bg-white px-5 relative flex h-[60px] rounded-lg hover:border border-primary">
-                <span
-                  class="w-auto flex justify-end items-center"
-                >
+              <div
+                class="bg-white px-5 relative flex h-[60px] rounded-lg border border-transparent has-focus:border-primary"
+              >
+                <span class="w-auto flex justify-end items-center">
                   <i class="fas fa-search"></i>
                 </span>
                 <input
@@ -102,27 +101,43 @@
 
           <div class="a2n_right__wrapper lg:w-2/3">
             <div class="a2n_courses_wrapper">
-              <div class="results-filter-wrapper">
-                <h3 class="title">Your Selected</h3>
-                <div class="inner p-[10px] bg-[#F5F7FC] rounded-[4px] overflow-hidden flex">
-                  <ul class="results-filter">
+              <div class="results-filter-wrapper mb-5">
+                <h3
+                  class="title text-[20px] mb-4 font-medium text-main-fontColor font-primary"
+                >
+                  Your Selected
+                </h3>
+                <div
+                  class="inner p-[10px] bg-[#F5F7FC] rounded-[4px] overflow-hidden flex gap-[10px] justify-between items-center"
+                >
+                  <ul
+                    class="results-filter flex gap-[10px] items-center flex-wrap"
+                  >
                     <li>
                       <a href="#"><span class="close-value">x</span>Newest</a>
                     </li>
                   </ul>
-                  <a href="#">Clear all</a>
+                  <a
+                    href="#"
+                    class="pr-[10px] text-[13px] text-[#e44343] font-primary font-normal hover:underline"
+                    >Clear all</a
+                  >
                 </div>
               </div>
-              <div class="jobs-alert-ordering-wrapper flex justify-between items-center xl:mb-7">
-                <div class="results-coun text-[15px] font-medium text-main-fontColor font-primary">Showing all 7 results</div>
-                <div class="jobs-ordering-wrapper">
-                  <form class="jobs-ordering " method="get" action="/">
+              <div
+                class="jobs-alert-ordering-wrapper flex justify-between items-center xl:mb-7 flex-wrap gap-[10px] mb-5"
+              >
+                <div
+                  class="results-count text-[15px] font-normal text-main-fontColor font-primary"
+                >
+                  Showing all 7 results
+                </div>
+                <div class="jobs-ordering-wrapper min-w-33">
+                  <form class="jobs-ordering" method="get" action="/">
                     <select
                       name="filter-orderby"
                       class="orderby select2-hidden-accessible"
                       data-placeholder="Sort by"
-                      tabindex="-1"
-                      aria-hidden="true"
                     >
                       <option value="menu_order" selected="selected">
                         Sort by (Default)
@@ -133,6 +148,101 @@
                     </select>
                   </form>
                 </div>
+              </div>
+              <div class="a2n_courses__grid grid grid-cols-1 gap-7">
+                <article
+                  class="group a2n_job__card flex relative bg-white rounded-lg border-[#ECEDF2] border p-4 xl:p-7 hover:shadow-lg transition-all duration-300 ease-in-out"
+                >
+                  <a
+                    href="javascript:void(0);"
+                    class="btn-follow btn-action-job btn-add-job-shortlist absolute top-1 right-1 w-7 h-7 rounded-full bg-transparent text-[14px] text-[#696969] xl:top-5 xl:right-5 flex items-center justify-center transition-all duration-300 ease-in-out group-hover:bg-[#ECEDF2]"
+                    ><i class="fa-regular fa-bookmark"></i
+                  ></a>
+                  <div class="employer-logo">
+                    <a href="#">
+                      <img
+                        width="100"
+                        height="100"
+                        src="./assets/images/job-img.jpg"
+                        class="max-w-full h-auto"
+                        alt=""
+                        decoding="async"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
+                  <div class="job-list-content px-5 overflow-hidden flex-1">
+                    <div
+                      class="title-wrapper flex-middle-sm mb-1 flex items-center gap-1 flex-wrap"
+                    >
+                      <h2
+                        class="job-title text-lg font-primary font-medium text-main-fontColor transition-all duration-300 ease-in-out hover:text-primary"
+                      >
+                        <a
+                          href="https://apusthemes.com/wp-demo/superio/job/finance-manager-health/"
+                          rel="bookmark"
+                          >Finance Manager &amp; Health</a
+                        >
+                      </h2>
+                      <span
+                        class="featured-text text-[#34A853] text-[13px] font-primary font-normal"
+                        >Featured</span
+                      >
+                      <span
+                        class="filled-text text-[#e44343] text-[15px] ml-1 font-primary font-normal"
+                        >Filled</span
+                      >
+                    </div>
+                    <div class="job-metas flex items-center gap-x-6 flex-wrap">
+                      <div
+                        class="category-job text-[#696969] font-primary font-normal"
+                      >
+                        <div class="job-category with-icon">
+                          <i class="text-[17px] mr-1 fa-solid fa-briefcase"></i>
+                          <a
+                            href="#"
+                            class="text-inherit hover:text-main-fontColor"
+                            >Design</a
+                          >, <a href="#">Development</a>
+                        </div>
+                      </div>
+                      <div
+                        class="job-location text-[#696969] font-primary font-normal"
+                      >
+                        <i
+                          class="text-[17px] mr-1 fa-solid fa-location-dot"
+                        ></i>
+                        <a href="#">New York</a>
+                      </div>
+                      <div
+                        class="job-salary with-icon text-[#696969] font-primary font-normal"
+                      >
+                        <i
+                          class="text-[17px] mr-1 fa-solid fa-money-bill-wave"
+                        ></i>
+                        <span class="suffix">$</span
+                        ><span class="price-text">450</span> -
+                        <span class="suffix">$</span
+                        ><span class="price-text">500</span> / month
+                      </div>
+                    </div>
+                    <div
+                      class="job-metas-bottom mt-3 flex items-center gap-3 flex-wrap"
+                    >
+                      <div class="job-type with-title">
+                        <a
+                          class="type-job text-primary text-[13px] font-primary font-normal py-[1px] px-5 rounded-[50px] bg-[#1967d226] leading-[23px]"
+                          href="#"
+                          >Full Time</a
+                        >
+                      </div>
+                      <span
+                        class="urgent text-[#F9AB00] text-[13px] font-primary font-normal py-[1px] px-5 rounded-[50px] bg-[#f9ab0026] leading-[23px]"
+                        >Urgent</span
+                      >
+                    </div>
+                  </div>
+                </article>
               </div>
             </div>
           </div>
